@@ -1,4 +1,4 @@
-#USD/EUR Exchange Rates from GBP
+# USD/EUR Exchange Rates from GBP
 
 - Graph of data from the last 30 days.
 - Data is retrieved from https://app.freecurrencyapi.com/
