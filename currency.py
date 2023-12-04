@@ -42,30 +42,30 @@ def main():
 ##    'USD': [1.2715041358, 1.2693896922, 1.2604457551, 1.2451747705, 1.249234694, 1.2216871693, 1.2375163123],
 ##    'EUR': [1.1674444161, 1.1566933975, 1.1520601554, 1.1417755913, 1.1479968824, 1.1451242008, 1.1527342115]}
 
-    # Create pandas dataframe
+    #Create pandas dataframe
     df = pd.DataFrame.from_dict(data)
 
     x = df['Date']
     y1 = df['USD']
     y2 = df['EUR']
 
-    # Create a single figure and axes
+    #Create a single figure and axes
     fig, ax = plt.subplots()
 
-    # Plot both data sets on the same axes
+    #Plot both data sets on the same axes
     ax.plot(x, y1, color='blue', label='USD')
     ax.plot(x, y2, color='red', label='EUR')
 
-    #adjust layout so that the date fits within the window
+    #Adjust layout so that the date fits within the window
     plt.subplots_adjust(bottom=0.25)
 
-    # Set labels and title
+    #Set labels and title
     ax.set_xlabel('Date')
     ax.set_ylabel('Exchange Rate')
     ax.set_title('USD/EUR Exchange Rates from GBP')
     ax.legend()
     
-    # Rotate dates on the x axis
+    #Rotate dates on the x axis
     plt.xticks(rotation=90)
 
     #show plot
